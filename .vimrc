@@ -6,6 +6,16 @@ set hidden
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 
+"Highlight syntax"
+syntax on
+"detect file type"
+filetype on
+filetype plugin indent on
+
+"code folding"
+set foldmethod=indent
+set foldlevel=99
+
 autocmd VimEnter * NERDtree 
 
 "tab is translated into 4 spaces" 
@@ -71,5 +81,7 @@ inoremap <C-B> <Esc>bi
 inoremap <C-w> <Esc>wi
 inoremap <C-$> <Esc>$a
 inoremap <C-0> <Esc>$i
+
+map <c-j> <c-w>j
 
 vmap s S
