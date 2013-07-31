@@ -63,6 +63,12 @@ let mapleader=","
 set nobackup
 
 set noswapfile
+"noremap : it prevents the remapping from happening."
+
+set t_Co=256
+
+colorscheme elflord
+
 inoremap " ""<Left>
 inoremap <Leader>" "
 
@@ -82,6 +88,22 @@ inoremap <C-w> <Esc>wi
 inoremap <C-$> <Esc>$a
 inoremap <C-0> <Esc>$i
 
+"mapping for movement between the split windows "
 map <c-j> <c-w>j
+map <c-k> <c-w>k
+map <c-l> <c-w>l
+map <c-h> <c-w>h
 
+"mapping for the surrounding"
 vmap s S
+
+"Open todo"
+nnoremap <leader>td <Plug>TaskList
+
+"open the revision history"
+nnoremap <leader>g :GundoToggle<CR>
+
+nnoremap <leader>j :RopeGotoDefinition<CR>
+nnoremap <leader>r :RopeRename<CR>
+
+
