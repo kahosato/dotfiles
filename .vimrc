@@ -1,5 +1,6 @@
 set nocompatible
-
+set modeline
+set ls=2
 "One can have unwritten changes to a file and open a new file using :e"
 set hidden
 
