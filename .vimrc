@@ -4,8 +4,8 @@ set ls=2
 "One can have unwritten changes to a file and open a new file using :e"
 set hidden
 
-call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
+"call pathogen#helptags()"
+"call pathogen#runtime_append_all_bundles()"
 
 "Highlight syntax"
 syntax on
@@ -17,7 +17,7 @@ filetype plugin indent on
 set foldmethod=indent
 set foldlevel=99
 
-autocmd VimEnter * NERDtree 
+"autocmd VimEnter * NERDtree"
 
 "tab is translated into 4 spaces" 
 set expandtab
@@ -73,7 +73,6 @@ colorscheme elflord
 inoremap " ""<Left>
 inoremap <Leader>" "
 
-inoremap { {}<Left><Enter><Enter><Up><tab>
 inoremap <Leader>{ {
 
 inoremap ( ()<left>
