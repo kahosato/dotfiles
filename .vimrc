@@ -72,7 +72,7 @@ colorscheme elflord
 
 inoremap " ""<Left>
 inoremap <Leader>" "
-
+inoremap { {}<Left>
 inoremap <Leader>{ {
 
 inoremap ( ()<left>
@@ -106,4 +106,5 @@ nnoremap <leader>g :GundoToggle<CR>
 nnoremap <leader>j :RopeGotoDefinition<CR>
 nnoremap <leader>r :RopeRename<CR>
 
+imap jk <Esc>
 
